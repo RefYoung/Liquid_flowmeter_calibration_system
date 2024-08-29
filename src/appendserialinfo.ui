@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AppendSerialInfo</class>
+ <widget class="QDialog" name="AppendSerialInfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>249</width>
+    <height>444</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>添加串口</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="7" column="1" colspan="2">
+    <widget class="QPushButton" name="btnOk">
+     <property name="text">
+      <string>添加</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="combSerialPort"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>波特率:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="2">
+    <widget class="QComboBox" name="combParityBit">
+     <item>
+      <property name="text">
+       <string>无校验</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>奇校验</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>偶校验</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>0校验</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1校验</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>校验位:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="2">
+    <widget class="QComboBox" name="combStopBit">
+     <item>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1.5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>流控:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QComboBox" name="combBaudrRate">
+     <item>
+      <property name="text">
+       <string>9600</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>19200</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>38400</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>57600</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>115200</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>数据位:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>停止位:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="2">
+    <widget class="QComboBox" name="combDataBits">
+     <item>
+      <property name="text">
+       <string>8</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>7</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="btnUpdateSerialPort">
+     <property name="text">
+      <string>刷新</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QPushButton" name="btnCancel">
+     <property name="text">
+      <string>取消</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1" colspan="2">
+    <widget class="QComboBox" name="combFluidControl">
+     <item>
+      <property name="text">
+       <string>无流控</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>硬件流控</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>软件流控</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>串口:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>备注:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1" colspan="2">
+    <widget class="QLineEdit" name="editRemark">
+     <property name="placeholderText">
+      <string>请输入...</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>editRemark</tabstop>
+  <tabstop>combSerialPort</tabstop>
+  <tabstop>combParityBit</tabstop>
+  <tabstop>combStopBit</tabstop>
+  <tabstop>combBaudrRate</tabstop>
+  <tabstop>combDataBits</tabstop>
+  <tabstop>btnUpdateSerialPort</tabstop>
+  <tabstop>btnCancel</tabstop>
+  <tabstop>combFluidControl</tabstop>
+  <tabstop>btnOk</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

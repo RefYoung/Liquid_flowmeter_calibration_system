@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>appendLM</class>
+ <widget class="QDialog" name="appendLM">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>210</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>添加下位机</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="2">
+    <widget class="QLineEdit" name="editLMName"/>
+   </item>
+   <item row="5" column="2">
+    <widget class="QPushButton" name="btnOk">
+     <property name="text">
+      <string>确定</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>名称</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>串口</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QComboBox" name="combLMRole">
+     <item>
+      <property name="text">
+       <string>松下泵</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>蠕动泵</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>回水泵</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>温度计</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>电子秤</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>流量计</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QComboBox" name="combLMSerialPort"/>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QPushButton" name="btnCancel">
+     <property name="text">
+      <string>取消</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>备注</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QLineEdit" name="editLMRemark"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>角色</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QSpinBox" name="spinLMAddress">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>地址</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
